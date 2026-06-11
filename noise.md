@@ -1658,7 +1658,7 @@ handshake is complete and expose the returned value to the application as a
 
 Parties can then sign the handshake hash, or hash it along with their password,
 to get an authentication token which has a "channel binding" property: the
-token can't be used by the receiving party with a different sesssion.
+token can't be used by the receiving party with a different session.
 
 ## 11.3. Rekey
 Parties might wish to periodically update their cipherstate keys using a one-way function, so that a compromise of cipherstate keys will not decrypt older messages.  Periodic rekey might also be used to reduce the volume of data encrypted under a single cipher key (this is usually not important with good ciphers, though note the discussion on `AESGCM` data volumes in [Section 14](#security-considerations)).
